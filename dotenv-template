@@ -1,0 +1,10 @@
+# Token for your discord bot
+DISCORD_BOT_TOKEN=""
+
+# Your bots client id (find in dev portal)
+DISCORD_CLIENT_ID=""
+
+# Comma seperated list of ids to sync your commands with instantly instead of globally
+# Example:
+# "12345678,54890426,91765936"
+DISCORD_TEST_GUILDS=""
