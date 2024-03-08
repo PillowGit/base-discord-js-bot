@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * Slash Command Function example
  *
  */
@@ -16,13 +16,12 @@ module.exports = {
     .setName("ping")
     .setDescription("Reports the bots ping"),
   // The execute function is called when the command is used by a user, data is
-  // passed via the interaction object. If you'd like more info, pass the 
+  // passed via the interaction object. If you'd like more info, pass the
   // actual client object through the execute call in index.js and add a
   // parameter for it here, then you can do things like client.fetch(info)
   // For more info on the interaction object, see:
   // https://discordjs.guide/message-components/interactions.html#responding-to-component-interactions
   async execute(interaction) {
-    console.log("hi");
     const ms_diff = Date.now() - interaction.createdAt.getTime();
     await interaction.reply({
       content: ms_diff.toString().concat("ms"),
@@ -31,3 +30,4 @@ module.exports = {
     await interaction.deleteReply();
   },
 };
+
